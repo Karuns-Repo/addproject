@@ -1,0 +1,117 @@
+<!-- <div class="main">
+<nav class="navbar navbar-expand-sm navbar one ">
+  <div class="container-fluid">
+    <a class="navbar-brand" ><img src="../assets/myntra.png" alt="" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link navbar-brand" >Men</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-brand" >Women</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-brand" >Kids</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-brand" >Home&living</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-brand" >Beauty</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-brand" >Studio
+            <span class="badge bg-light badge-pill" style="position: absolute;
+            bottom: 70px;
+            color: deeppink; font-size: 10px;">New</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <form class="d-flex">
+            
+            <input class="form-control me-2" type="text" placeholder="Search for products, brands and more">
+          </form>
+        </li>
+        <li class="nav-item">
+          
+        </li>
+      </ul>
+      <i class='fa fa-user user' style='font-size:20px' ></i>
+      <h6>profile</h6>
+      <i class='fa fa-heart heart' style='font-size:24px'></i>
+      <h6>wishlist</h6>
+      <i class='fa fa-shopping-bag  bag' style='font-size:24px'></i>
+      <h6> bag</h6>
+    </div>
+  </div>
+</nav>
+
+<div class="time align-middle two">
+Eors ends in
+</div>
+
+
+<img draggable="false" class="image-image undefined image-hand" src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2024/5/30/4d5cd030-06fe-4c79-867d-5f1b598ddf6a1717010361896-FLAT-500-Off-on-1st-Purchase-Strip.jpg" srcset="">
+
+
+
+<div class="myx-indexContainer"><div class="container-base myx-stretch    "><div><div class="container-container "><div class=" row-base" style="display: -webkit-flex;"><div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><div class="container-base myx-stretch    "><div style="padding-bottom: 59.37%;"><div class="container-container container-aspectContainer"><div class=" row-base" style="display: -webkit-flex;"><div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a href="https://myntra.com/online-fashion-store"><div><picture draggable="false" class="img-responsive"><source srcset="https://assets.myntassets.com/f_webp,w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2024/6/11/529c87a5-1379-47c7-a1e5-7d685e7c75de1718045445778-DESKTOP-HP-BANNER-----2_01.jpg" type="image/webp"><img draggable="false" class="image-image undefined image-hand" src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2024/6/11/529c87a5-1379-47c7-a1e5-7d685e7c75de1718045445778-DESKTOP-HP-BANNER-----2_01.jpg" srcset=""></picture></div></a></div></div></div></div></div></div><div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><div class="container-base myx-stretch    "><div style="padding-bottom: 59.37%;"><div class="container-container container-aspectContainer"><div class=" row-base" style="display: -webkit-flex;"><div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a href="https://www.myntra.com/shop/men"><div><picture draggable="false" class="img-responsive"><source srcset="https://assets.myntassets.com/f_webp,w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2024/6/11/577f41c9-9c75-46aa-8f94-39c98da8d8b11718045445800-DESKTOP-HP-BANNER-----2_02.jpg" type="image/webp"><img draggable="false" class="image-image undefined image-hand" src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2024/6/11/577f41c9-9c75-46aa-8f94-39c98da8d8b11718045445800-DESKTOP-HP-BANNER-----2_02.jpg" srcset=""></picture></div></a></div></div></div></div></div></div></div></div></div></div></div>
+
+
+
+
+</div> -->
+
+
+
+
+<!-- 
+<div class="karun">
+  <h1>Type Master</h1>
+  <p>
+    <span *ngFor="let x of randomString.split(''); let i= index" 
+    [class]="compare(x,enteredText[i])">
+      {{x}}
+    </span>
+  </p>
+  <input type="text" class="form-control" (input)="getEnterText($event)"> 
+  <h1 *ngIf="randomString === enteredText">success..!</h1>
+  
+</div>
+{{enteredText}}
+ -->
+ 
+ <!-- <div class="flex-container">
+  <button class="btn btn-warning"  [routerLink]="['/employee']">employee</button>
+  <button class="btn btn-warning"  [routerLink]="['/about']">about</button>
+  <button class="btn btn-warning"  routerLink="/home">home</button>
+ </div>
+
+ <router-outlet></router-outlet> -->
+
+
+
+ <table class="table">
+  <thead>
+    <tr>
+      <th>NAME</th>
+      <th>AGE</th>
+      <th>GENDER</th>
+      <th>ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let x of getData">
+      <td>{{x.name}}</td>
+      <td>{{x.age}}</td>
+      <td>{{x.gender}}</td>
+      <td>{{x.id}}</td>
+      <td>
+        <button class="btn btn-danger">delete</button>
+      </td>
+    </tr>
+  </tbody>
+ </table>

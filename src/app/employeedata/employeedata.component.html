@@ -1,0 +1,128 @@
+<!-- 
+<div class="container mt-3">
+ 
+    <div class="card" style="width:400px">
+      
+      <div class="card-body" *ngFor="let x of newdata">
+        <h4 class="card-title">user info</h4>
+        <p class="card-text">Name:{{x.name.charAt(0).toUpperCase()}}</p>
+        <p class="card-text">dob:{{x.dob}}</p>
+        <p class="card-text">gender:{{x.gender}}</p>
+        <div *ngFor="let y of x.address">
+        <p class="card-text">Address:{{y.doorno}}</p>
+        <p class="card-text">Address:{{y.street}}</p>
+        <p class="card-text">Address:{{y.area}}</p>
+    </div>
+      </div>
+    </div>
+</div>
+
+<ul *ngFor="let x of newdata">
+    <li class="li">{{x.name.charAt(0)}}</li>
+    <li class="li">{{x.dob}}</li>
+    <li class="li">{{x.gender}}</li>
+    <li class="li">
+        <ul *ngFor="let y of x.address" class="add">
+            <li class="li">{{y.doorno}}</li>
+            <li class="li">{{y.street}}</li>
+            <li class="li">{{y.area}}</li>
+            
+        </ul>
+    </li>
+</ul>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+<div class="container mt-3">
+    <h2>Log In form</h2>
+    <form >
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" class="form-control"  placeholder="Enter email">
+      </div>
+      <div>
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control"  placeholder="Enter password" >
+      </div>
+      <div>
+        <label class="form-check-label">
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div> -->
+
+
+
+<table class="table table-primary">
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+             <th></th>
+
+            <th><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#log">
+                Add employee
+              </button></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let a of event">
+            <td>{{a.name}}</td>
+            <td>{{a.age}}</td>
+            <td>{{a.gender}}</td>
+            <td> <button class="btn btn-warning">edit</button></td>
+            <td><button class="btn btn-danger">delete</button></td>
+           
+        </tr>
+    </tbody>
+</table>
+
+
+<div class="modal" id="log">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+          <div class="modal-header">
+            <h4 class="modal-title">employee profile</h4>
+          </div>  
+          <div class="modal-body">
+ <form #myForm="ngForm" >
+    <div class="form-group">
+        <label for="">NAME</label>
+        <input type="text" class="form-control" [(ngModel)]="inData.name" name="name">
+    </div>
+    <div class="form-group">
+        <label for="">AGE</label>
+        <input type="nunber" class="form-control" [(ngModel)]="inData.age" name="age">
+    </div>
+    <div class="form-group">
+        <label for="">GENDER</label>
+        <input type="text" class="form-control" [(ngModel)]="inData.gender" name="gender">
+    </div>
+    <div class="ba">
+        <button class="btn btn-warning back">cancel</button>
+    </div>
+    <div class="ab">
+        <button class="btn btn-primary front" type="submit" data-bs-dismiss="modal" (click)="submitForm(myForm)">save</button>
+    </div>
+ </form>
+      </div>
+    </div>
+      </div>

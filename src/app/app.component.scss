@@ -1,0 +1,87 @@
+.karun{
+    height: 600px;
+    width: 600px;
+    background-color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.form-control{
+    width: 500px;
+    position: relative;
+    left: 40px;
+}
+
+.pending{
+    color: salmon;
+}
+.succeed{
+    color: green;
+    font-weight: bold;
+}
+.wrong{
+    color: red;
+    font-weight: bold;
+}
+
+.flex-container{
+    background-color: violet;
+    height: 50px;
+    display: flex;
+flex-direction: row-reverse;}
+button{
+    margin: 3px;
+}
+
+.logo{
+    width: 70px!important;
+    height: 50px!important;
+}
+.user{
+    position: relative;
+    right: 115px;
+    bottom: 5px;
+ 
+}
+h6{
+    font-size: small;
+    position: relative;
+    right: 140px;
+    top: 15px;
+}
+.heart{
+    position: relative;
+    right: 110px;
+    bottom: 5px;
+ 
+}
+.bag{
+    position: relative;
+    right: 115px;
+    bottom: 5px;
+}
+.time{
+    background-color: rgb(190, 207, 216);
+    text-align: center;
+    height: 50px;
+}
+.undefined{
+    width: 100%;
+}
+.main{
+    height: 100vh;
+}
+.one{
+    height: 20vh;
+}
+.two{
+    height: 10vh;
+}
+.three{
+    height: 30vh;
+}
+.four{
+    height: 40vh;
+}
